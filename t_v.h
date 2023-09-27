@@ -6,12 +6,12 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 21:06:06 by albaud            #+#    #+#             */
-/*   Updated: 2023/03/10 12:12:41 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/27 16:04:23 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef T_V_H
-# define T_V_H 2
+# define T_V_H
 
 typedef struct s_v
 {
@@ -19,11 +19,18 @@ typedef struct s_v
 	int		size;
 }	t_v;
 
+# ifndef T_V2_H
+#  define T_V2_H
+
 typedef struct s_v2
 {
 	double	x;
 	double	y;
 }	t_v2;
+# endif
+
+# ifndef T_V3_H
+#  define T_V3_H
 
 typedef struct s_v3
 {
@@ -31,5 +38,6 @@ typedef struct s_v3
 	double	y;
 	double	z;
 }	t_v3;
+# endif
 
 #endif

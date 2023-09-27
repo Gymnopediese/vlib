@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 21:28:46 by albaud            #+#    #+#             */
-/*   Updated: 2023/02/23 15:17:22 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/27 15:48:13 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_v	v_new(int size, double init)
 	int	ite;
 
 	ite = -1;
-	res.arr = calloc(size, sizeof(double));
+	res.arr = new(size, sizeof(double));
 	if (res.arr == 0)
 		v_error("null pointer returned by malloc");
 	res.size = size;

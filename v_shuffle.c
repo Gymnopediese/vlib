@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 12:33:59 by albaud            #+#    #+#             */
-/*   Updated: 2023/04/11 12:34:12 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/27 09:34:00 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	v_shuffle(t_v *a)
 
 	i = -1;
 	while (++i < a->size)
-		swap(&a->arr[i], &a->arr[(int)rand_range(i, a->size)]);
+		v_swap(&a->arr[i], &a->arr[(int)rand_range(i, a->size)]);
 }

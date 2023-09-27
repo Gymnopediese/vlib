@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 22:20:59 by albaud            #+#    #+#             */
-/*   Updated: 2023/02/15 22:21:43 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/26 15:57:35 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_v	v_rand(int size, int min, int max)
 	int	ite;
 
 	ite = -1;
-	res.arr = calloc(size, sizeof(double));
+	res.arr = new(size, sizeof(double));
 	if (res.arr == 0)
 		v_error("null pointer returned by malloc");
 	res.size = size;
