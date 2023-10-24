@@ -6,13 +6,13 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 12:01:16 by albaud            #+#    #+#             */
-/*   Updated: 2023/02/17 12:01:47 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:44:27 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vlib.h"
 
-double	v_dot(t_v *a, t_v *b)
+double	v_dot(const t_v *a, const t_v *b)
 {
 	double	sum;
 	int		ite;
