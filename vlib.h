@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 21:06:06 by albaud            #+#    #+#             */
-/*   Updated: 2023/09/27 09:31:25 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/24 12:36:37 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int		v_tocol(double r, double g, double b);
 t_v		v_new(int size, double init);
 void	v_error(char *message);
 double	v_max(t_v *a);
-double	v_dot(t_v *a, t_v *b);
-t_v		v_rand(int size, int min, int max);
+double	v_dot(const t_v *a, const t_v *b);
+t_v		v_rand(int size, double min, double max);
 double	v_dist(t_v *a, t_v *b);
 double	v_omax(t_v *a);
 int		v_maxi(t_v *a);

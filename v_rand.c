@@ -6,13 +6,13 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 22:20:59 by albaud            #+#    #+#             */
-/*   Updated: 2023/09/26 15:57:35 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/24 12:36:23 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vlib.h"
 
-t_v	v_rand(int size, int min, int max)
+t_v	v_rand(int size, double min, double max)
 {
 	t_v	res;
 	int	ite;
@@ -23,6 +23,6 @@ t_v	v_rand(int size, int min, int max)
 		v_error("null pointer returned by malloc");
 	res.size = size;
 	while (++ite < size)
-		res.arr[ite] = rand_range(min, max);
+		res.arr[ite] = randdouble(min, max);
 	return (res);
 }
