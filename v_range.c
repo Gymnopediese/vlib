@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:31:27 by albaud            #+#    #+#             */
-/*   Updated: 2023/02/25 00:53:47 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:52:39 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_v	v_range(int min, int max)
 
 	if (min > max)
 		v_error("min bigger than max for range");
-	res.arr = alo(max - min, sizeof(double));
+	res.arr = new(max - min, sizeof(double));
 	i = min;
 	s = -1;
 	res.size = max - min;

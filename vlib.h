@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 21:06:06 by albaud            #+#    #+#             */
-/*   Updated: 2023/10/24 12:36:37 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:52:18 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,9 @@ void	v_add_a_x_b(t_v *a, double b, t_v *res);
 void	v_subs(t_v *a, t_v *b, t_v *res);
 void	v_mult(t_v *a, t_v *b, t_v *res);
 
-void	*alo(int n, int size);
 t_v		v_range(int min, int max);
 void	v_swap(double *a, double *b);
 void	v_shuffle(t_v *a);
-double	rand_range(int min, int max);
 int		rand_range_weight(int r, int ratio);
 void	v_subn(t_v *a, double b, t_v *res);
 
